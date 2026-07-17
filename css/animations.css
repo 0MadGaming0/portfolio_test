@@ -1,0 +1,77 @@
+/* ==========================================================================
+   ANIMATIONS.CSS
+   Defines keyframe animations and structural classes (no animations applied).
+   ========================================================================== */
+
+/* 1. Fade Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.anim-fade {
+    /* To be applied to elements in future phases */
+    animation-name: fadeIn;
+    animation-duration: var(--transition-normal);
+    animation-fill-mode: both;
+}
+
+/* 2. Slide Animations */
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.anim-slide {
+    /* To be applied to elements in future phases */
+    animation-name: slideInUp;
+    animation-duration: var(--transition-normal);
+    animation-fill-mode: both;
+}
+
+/* 3. Scale Animations */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.anim-scale {
+    /* To be applied to elements in future phases */
+    animation-name: scaleUp;
+    animation-duration: var(--transition-normal);
+    animation-fill-mode: both;
+}
+
+/* 4. Rotate Animations */
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.anim-rotate {
+    /* To be applied to elements in future phases */
+    animation-name: rotateClockwise;
+    animation-duration: var(--transition-slow);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

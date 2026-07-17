@@ -1,0 +1,33 @@
+/* ==========================================================================
+   RESPONSIVE.CSS
+   Media query breakpoint definitions. Mobile-first layout (no components styling).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Base Mobile Layout (Base style definitions)
+   -------------------------------------------------------------------------- */
+/* No media query needed. Default rules applied globally serve as base mobile styles. */
+
+
+/* --------------------------------------------------------------------------
+   2. Tablet Breakpoint (min-width: 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    /* Tablet specific overrides go here */
+}
+
+
+/* --------------------------------------------------------------------------
+   3. Laptop Breakpoint (min-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+    /* Laptop specific overrides go here */
+}
+
+
+/* --------------------------------------------------------------------------
+   4. Desktop Breakpoint (min-width: 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+    /* Desktop specific overrides go here */
+}

@@ -1,0 +1,79 @@
+/* ==========================================================================
+   STYLE.CSS
+   Global stylesheet. Imports individual stylesheets and defines base resets.
+   ========================================================================== */
+
+/* 1. Import Sub-modules in Correct Order */
+@import url("variables.css");
+@import url("utilities.css");
+@import url("animations.css");
+@import url("responsive.css");
+
+/* 2. CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 3. Body Styling */
+body {
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Default Typography */
+body,
+button,
+input,
+select,
+textarea {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: 1.25;
+}
+
+/* 5. Anchor Defaults */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* 6. Image Defaults */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Selection Color */
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
